@@ -1,0 +1,11 @@
+[Unit]
+Description=Octoprint Printer Monitor
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python /home/pi/oprintmon/oprintmon.py
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
